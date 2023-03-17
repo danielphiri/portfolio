@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.mjs
-    siteTitle: `Jodie`,
+    siteTitle: `Daniel`,
     siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
     siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
     siteUrl: `https://jodie.lekoarts.de`,
@@ -20,13 +20,31 @@ const config: GatsbyConfig = {
   trailingSlash: `never`,
   plugins: [
     {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        }
+      }
+    },
+    {
       resolve: `@lekoarts/gatsby-theme-jodie`,
       // See the theme's README for all available options
       options: {
         navigation: [
           { name: `Projects`, slug: `/projects` },
-          { name: `Art`, slug: `/art` },
-          { name: `About`, slug: `/about` },
+          { name: `Career`, slug: `/art` },
+          { name: `Hobbies`, slug: `/about` },
         ],
       },
     },
@@ -43,7 +61,7 @@ const config: GatsbyConfig = {
         short_name: `jodie`,
         description: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#000000`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#b75e09`,
