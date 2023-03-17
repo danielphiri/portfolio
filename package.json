@@ -22,7 +22,9 @@
     "gatsby-plugin-sitemap": "^6.5.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.30",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-share": "^4.4.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
