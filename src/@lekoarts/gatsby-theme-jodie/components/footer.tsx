@@ -43,25 +43,6 @@ const Footer = ({ bg }: { bg: string }) => {
       }}
     >
       <div>
-        &copy; {new Date().getFullYear()} by {siteTitle}.
-      </div>
-      <div>
-        <Link
-          aria-label="Link to the theme's GitHub repository"
-          href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-jodie"
-        >
-          LinkedIn
-        </Link>
-        {` `}
-        by
-        {` `}
-        <Link
-          aria-label="Link to the theme author's website"
-          href="https://www.lekoarts.de?utm_source=jodie&utm_medium=Theme"
-        >
-          Daniel
-        </Link>
-        <br></br>
       <FacebookShareButton url={"https"} quote={"FB"}>
         <Facebook strokeWidth={1.25} />
       </FacebookShareButton>
@@ -77,7 +58,10 @@ const Footer = ({ bg }: { bg: string }) => {
       <EmailShareButton url={"wow"} title={"greatness"}>
         <Mail strokeWidth={1.25} />
       </EmailShareButton>
+      </div>
 
+      <div>
+        &copy; {new Date().getFullYear()}, {"Daniel Phiri"}.
       </div>
     </footer>
   )
