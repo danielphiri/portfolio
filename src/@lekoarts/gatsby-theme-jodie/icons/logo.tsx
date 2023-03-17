@@ -11,7 +11,7 @@ function Icon() {
       viewBox="0 0 112.5 112.5"
     >
       <defs>
-        <filter id="cfcaa33f22" width="100%" height="100%" x="0%" y="0%">
+        <filter id="000000" width="100%" height="100%" x="0%" y="0%">
           <feColorMatrix
             colorInterpolationFilters="sRGB"
             values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
