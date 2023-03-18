@@ -43,19 +43,16 @@ const Footer = ({ bg }: { bg: string }) => {
       }}
     >
       <div>
-      <FacebookShareButton url={"https"} quote={"FB"}>
-        <Facebook strokeWidth={1.25} />
-      </FacebookShareButton>
       &nbsp;&nbsp;
-      <LinkedinShareButton url={"url"} title={"Welcome"} summary={"Try Dis"}>
+      <LinkedinShareButton url={"https://www.linkedin.com/in/danielphiri/"} title={"My LinkedIn"} summary={"Most of my experiences are also reflected here"}>
         <Linkedin strokeWidth={1.25} />
       </LinkedinShareButton>
       &nbsp;&nbsp;
-      <TwitterShareButton url={"Hoa"} title={"Okay"}>
+      <TwitterShareButton url={"https://twitter.com/phirisworld"} title={""}>
         <Twitter strokeWidth={1.25} />
       </TwitterShareButton>
       &nbsp;&nbsp;
-      <EmailShareButton url={"wow"} title={"greatness"}>
+      <EmailShareButton url={"danielphiri@berkeley.edu"} title={"greatness"}>
         <Mail strokeWidth={1.25} />
       </EmailShareButton>
       </div>
