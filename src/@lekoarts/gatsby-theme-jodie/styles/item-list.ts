@@ -30,5 +30,5 @@ export const itemListWrapperStyles: ThemeUICSSObject = {
 }
 
 export const itemStyles: ThemeUICSSObject = {
-  width: '25%',
+  minHeight: '700px', minWidth: '500px',
 }

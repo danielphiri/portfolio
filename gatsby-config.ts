@@ -51,7 +51,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/projects`,
+        output: `/`,
       },
     },
     {
@@ -60,7 +60,7 @@ const config: GatsbyConfig = {
         name: `jodie - @lekoarts/gatsby-theme-jodie`,
         short_name: `jodie`,
         description: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
-        start_url: `/projects`,
+        start_url: `/`,
         background_color: `#000000`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/

@@ -20,7 +20,7 @@ export type JodieHomepageProps = {
         childImageSharp: {
           gatsbyImageData: IGatsbyImageData
         }
-      }
+      },
       __typename: "MdxProject"
     }[]
   }

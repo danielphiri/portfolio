@@ -32,7 +32,7 @@ const Footer = ({ bg }: { bg: string }) => {
         color: text,
         fontSize: 0,
         p: [3, 3, 4],
-        background: bg,
+        background: "#0B0512",
         a: {
           color: readableColor(bg),
           "&:hover,&:focus": {

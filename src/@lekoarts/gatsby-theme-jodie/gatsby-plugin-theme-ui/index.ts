@@ -7,8 +7,8 @@ const theme = merge(originalTheme, {
   },
   colors: {
     text: '#fff',
-    background: '#000',
-    primary: '#000',
+    background: '#11091C',
+    primary: '#715696',
   },
 })
 
