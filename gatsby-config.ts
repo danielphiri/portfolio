@@ -8,11 +8,11 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.mjs
-    siteTitle: `Daniel`,
-    siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
-    siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
+    siteTitle: `Daniel Phiri Portfolio`,
+    siteTitleAlt: `Daniel Phiri Portfolio`,
+    siteHeadline: `Daniel Phiri Portfolio`,
     siteUrl: `https://danielphiri.net`,
-    siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+    siteDescription: `I am a passionate and driven software engineer with experience in different verticals and teams of different sizes.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@lekoarts_de`,
