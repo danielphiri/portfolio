@@ -10,6 +10,8 @@ import {
   PocketShareButton,
   EmailShareButton,
 } from 'react-share';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faDev, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = ({ bg }: { bg: string }) => {
   const { siteTitle } = useSiteMetadata()
@@ -43,20 +45,21 @@ const Footer = ({ bg }: { bg: string }) => {
       }}
     >
       <div>
-      &nbsp;&nbsp;
-      <LinkedinShareButton url={"https://www.linkedin.com/in/danielphiri/"} title={"My LinkedIn"} summary={"Most of my experiences are also reflected here"}>
-        <Linkedin strokeWidth={1.25} />
-      </LinkedinShareButton>
-      &nbsp;&nbsp;
-      <TwitterShareButton url={"https://twitter.com/phirisworld"} title={""}>
-        <Twitter strokeWidth={1.25} />
-      </TwitterShareButton>
-      &nbsp;&nbsp;
-      <EmailShareButton url={"danielphiri@berkeley.edu"} title={"greatness"}>
-        <Mail strokeWidth={1.25} />
-      </EmailShareButton>
-      </div>
 
+      <div>
+      &nbsp;&nbsp;
+        <a href={`https://www.linkedin.com/in/danielphiri/"}`} style={{fontSize: `1.5em`,padding: `0em 0.5em`, color: `#2D64BC`}} >
+          
+          <FontAwesomeIcon icon={faLinkedin} strokeWidth={1.25} />
+        </a>
+        <a href={`https://github.com/danielphiri`} style={{fontSize: `1.5em`,padding: `0em 0.5em`}}>
+          <FontAwesomeIcon icon={faGithub}/>
+        </a>
+        <a href={`https://twitter.com/phirisworld`} style={{fontSize: `1.5em`,padding: `0em 0.5em`, color: `#4A99E9`}} >
+          <FontAwesomeIcon icon={faTwitter}/>
+        </a>
+      </div>
+      </div>
       <div>
         &copy; {new Date().getFullYear()}, {"Daniel Phiri"}.
       </div>

@@ -31,7 +31,7 @@ const theme = merge(tailwind, {
   },
   sidebar: {
     normal: `290px`,
-    wide: `300px`,
+    wide: `290px`,
   },
   fonts: {
     body: `-apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`,

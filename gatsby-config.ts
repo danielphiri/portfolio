@@ -3,19 +3,24 @@ import "dotenv/config"
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
+const title = `Daniel Phiri Portfolio`
+const titleAlt = `Daniel Phiri Portfolio`
+const headline = `Daniel Phiri Portfolio`
+const description = `I am a passionate and driven software engineer with experience in different verticals and teams of different sizes.`
+
 const config: GatsbyConfig = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.mjs
-    siteTitle: `Daniel Phiri Portfolio`,
-    siteTitleAlt: `Daniel Phiri Portfolio`,
-    siteHeadline: `Daniel Phiri Portfolio`,
+    siteTitle: title,
+    siteTitleAlt: titleAlt,
+    siteHeadline: headline,
     siteUrl: `https://danielphiri.net`,
-    siteDescription: `I am a passionate and driven software engineer with experience in different verticals and teams of different sizes.`,
-    siteImage: `/banner.jpg`,
+    siteDescription: description,
+    siteImage: `/banner.png`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@lekoarts_de, Daniel Phiri`,
   },
   trailingSlash: `never`,
   plugins: [
@@ -57,9 +62,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jodie - @lekoarts/gatsby-theme-jodie`,
-        short_name: `jodie`,
-        description: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+        name: title,
+        short_name: headline,
+        description: description,
         start_url: `/`,
         background_color: `#000000`,
         // This will impact how browsers show your PWA/website
