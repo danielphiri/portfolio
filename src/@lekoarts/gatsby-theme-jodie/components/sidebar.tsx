@@ -32,12 +32,11 @@ const Sidebar = ({ bg }: SidebarProps) => {
       }}
       data-testid="sidebar"
     >
-
       <Link to={basePath} aria-label={`${siteTitle}, Back to Home`} sx={{ width: [`3rem`, `4rem`, `4.5rem`, `5rem`] }}>
         <Logo />
       </Link>
       <div sx={{ py: 2, display: [`none`, `none`, `none`, `block`] }} />
-      <i> "Welcome to my Porfolio. I am a Software Engineer and graduate of UC Berkeley. Look through the website to learn more about my experiences. I built this website using React and hosting it on AWS." </i> - Daniel Phiri
+      <i> "I am a Software Engineer with close to 5 years experience in iOS Development. I built this website using React and hosting it on AWS." </i> - Daniel Phiri
       <div sx={{ py: 3, display: [`none`, `none`, `none`, `block`] }} />
       <Navigation bg={bg} />
     </header>

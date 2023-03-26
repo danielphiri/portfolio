@@ -48,7 +48,7 @@ const Footer = ({ bg }: { bg: string }) => {
 
       <div>
       &nbsp;&nbsp;
-        <a href={`https://www.linkedin.com/in/danielphiri/"}`} style={{fontSize: `1.5em`,padding: `0em 0.5em`, color: `#2D64BC`}} >
+        <a href={`https://www.linkedin.com/in/danielphiri`} style={{fontSize: `1.5em`,padding: `0em 0.5em`, color: `#2D64BC`}} >
           
           <FontAwesomeIcon icon={faLinkedin} strokeWidth={1.25} />
         </a>

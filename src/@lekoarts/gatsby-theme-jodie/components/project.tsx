@@ -42,13 +42,6 @@ const Project: React.FC<React.PropsWithChildren<PageProps<JodieProjectProps>>> =
     <div sx={{ variant: `content.project` }}>
       <div sx={{ maxWidth: `70ch`, my: 4 }}>{children}</div>
     </div>
-    <div sx={{ backgroundColor: transparentize(0.9, project.color) }}>
-      <div sx={{ variant: `content.imageList` }}>
-        {images.nodes.map((image) => (
-          <GatsbyImage key={image.name} alt={image.name} image={image.childImageSharp.gatsbyImageData} />
-        ))}
-      </div>
-    </div>
   </Layout>
 )
 
