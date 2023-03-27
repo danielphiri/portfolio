@@ -23,7 +23,7 @@ const Sidebar = ({ bg }: SidebarProps) => {
         height: `100%`,
         display: `flex`,
         flexDirection: [`row`, `row`, `row`, `column`],
-        alignItems: [`center`, `center`, `center`, `flex-start`],
+        alignItems: [`flex-start`, `flex-start`, `flex-start`, `flex-start`],
         justifyContent: [`space-between`, `space-between`, `space-between`, `flex-start`],
         svg: {
           fill: readableColor(bg),
@@ -35,8 +35,9 @@ const Sidebar = ({ bg }: SidebarProps) => {
       <Link to={basePath} aria-label={`${siteTitle}, Back to Home`} sx={{ width: [`3rem`, `4rem`, `4.5rem`, `5rem`] }}>
         <Logo />
       </Link>
-      <div sx={{ py: 2, display: [`none`, `none`, `none`, `block`] }} />
-      <i> "I am a Software Engineer with close to 5 years  iOS apps. I built this website using React and hosting it on AWS." </i> - Daniel Phiri
+      <br></br>
+      <div sx={{ py: 0, display: [`none`, `none`, `none`, `block`] }} />
+      <i> I am a Software Engineer with close to 5 years of building iOS apps. I built this website using React and hosting it on AWS. </i> <br></br>
       <div sx={{ py: 3, display: [`none`, `none`, `none`, `block`] }} />
       <Navigation bg={bg} />
     </header>
