@@ -38,7 +38,7 @@ const Sidebar = ({ bg }: SidebarProps) => {
       {/* <div sx={{ py: 0, display: [`none`, `none`, `none`, `block`] }} /> */}
       {/* <br></br> */}
       <div sx={{ py: 3, display: [`block`, `block`, `block`, `block`] }} />
-      <i> I am a Software Engineer with close to 5 years of building iOS apps. I built this website using React and hosting it on AWS. </i> <br></br>
+      <i> I am a Software Engineer with close to 5 years of building software. I built this website using React and hosting it on AWS. </i> <br></br>
       <div sx={{ py: 3, display: [`none`, `none`, `none`, `block`] }} />
       <Navigation bg={bg} />
     </header>
