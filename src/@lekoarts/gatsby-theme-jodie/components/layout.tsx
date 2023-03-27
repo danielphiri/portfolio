@@ -32,10 +32,10 @@ const Layout = ({ children, color = `#0B0512` }: LayoutProps) => (
         },
         "::selection": {
           background: get(t, `colors.primary`),
-          color: get(t, `colors.white`),
+          color: get(t, `#715696`),
         },
         "ul > li > code, ol > li > code, p > code": {
-          color: `#ffffff`,
+          color: `#715696`,
           background: `#f6f8fa`,
           padding: 2,
         },
