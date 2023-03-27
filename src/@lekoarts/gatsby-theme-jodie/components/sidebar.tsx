@@ -17,9 +17,9 @@ const Sidebar = ({ bg }: SidebarProps) => {
     <header
       sx={{
         p: [3, 3, 4],
-        width: (t) => [`100%`, `100%`, `100%`, get(t, `sidebar.normal`), get(t, `sidebar.wide`)],
+        width: (t) => [`100%`, `100%`, `100%`, `100%`, `100%`],
         backgroundColor: bg,
-        position: [`relative`, `relative`, `relative`, `fixed`],
+        position: [`relative`, `relative`, `relative`, `relative`],
         height: `100%`,
         display: `flex`,
         flexDirection: [`row`, `row`, `row`, `column`],
@@ -36,7 +36,7 @@ const Sidebar = ({ bg }: SidebarProps) => {
         <Logo />
       </Link>
       <div sx={{ py: 2, display: [`none`, `none`, `none`, `block`] }} />
-      <i> "I am a Software Engineer with close to 5 years experience in iOS Development. I built this website using React and hosting it on AWS." </i> - Daniel Phiri
+      <i> "I am a Software Engineer with close to 5 years  iOS apps. I built this website using React and hosting it on AWS." </i> - Daniel Phiri
       <div sx={{ py: 3, display: [`none`, `none`, `none`, `block`] }} />
       <Navigation bg={bg} />
     </header>

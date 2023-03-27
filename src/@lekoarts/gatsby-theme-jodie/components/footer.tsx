@@ -56,7 +56,7 @@ const Footer = ({ bg }: { bg: string }) => {
           <FontAwesomeIcon icon={faGithub}/>
         </a>
         <a href={`https://twitter.com/phirisworld`} style={{fontSize: `1.5em`,padding: `0em 0.5em`, color: `#4A99E9`}} >
-          <FontAwesomeIcon icon={faTwitter}/>
+          <FontAwesomeIcon    icon={faTwitter}/>
         </a>
       </div>
       </div>

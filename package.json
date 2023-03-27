@@ -22,6 +22,7 @@
     "@lekoarts/gatsby-theme-jodie": "^5.0.4",
     "gatsby": "^5.5.0",
     "gatsby-plugin-manifest": "^5.5.0",
+    "gatsby-plugin-nprogress": "^5.8.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sitemap": "^6.5.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.30",
