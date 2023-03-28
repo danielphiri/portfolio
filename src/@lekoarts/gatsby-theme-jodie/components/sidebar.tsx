@@ -28,6 +28,7 @@ const Sidebar = ({ bg }: SidebarProps) => {
         svg: {
           fill: readableColor(bg),
         },
+        outline: `solid #715696 1px`,
         variant: `sidebar`,
       }}
       data-testid="sidebar"

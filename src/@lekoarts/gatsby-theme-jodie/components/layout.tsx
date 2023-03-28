@@ -9,7 +9,7 @@ import { SkipNavTarget, SkipNavTrigger } from "@lekoarts/gatsby-theme-jodie/src/
 
 type LayoutProps = { children: React.ReactNode; color?: string }
 
-const Layout = ({ children, color = `#0B0512` }: LayoutProps) => (
+const Layout = ({ children, color = `#ffffff` }: LayoutProps) => (
   <React.Fragment>
     <Global
       styles={(t) => ({
@@ -36,7 +36,7 @@ const Layout = ({ children, color = `#0B0512` }: LayoutProps) => (
         },
         "ul > li > code, ol > li > code, p > code": {
           color: `#715696`,
-          background: `#f6f8fa`,
+          background: `#ffffff`,
           padding: 2,
         },
         "@media(max-width: 600px)": {

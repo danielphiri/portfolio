@@ -42,7 +42,6 @@ const GridItem: React.FC<React.PropsWithChildren<{ to: string; className?: strin
       },
       "> div img": {
         transition: `all 0.3s ease 0s !important`,
-        top: 45,
         height: `100%`,
         width: `100%`
       },

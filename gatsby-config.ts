@@ -58,7 +58,7 @@ const config: GatsbyConfig = {
         navigation: [
           { name: `Projects`, slug: `/projects` },
           { name: `Education`, slug: `/education` },
-          { name: `Career`, slug: `/career`, color: `#715696` },
+          { name: `Career`, slug: `/career`, color: `#ffffff` },
           // { name: `Story`, slug: `/story` },
         ],
       },

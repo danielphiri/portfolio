@@ -52,7 +52,7 @@ const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { projects } 
       sx={{
         display: `grid`,
         gridTemplateColumns: [`1fr`],
-        gridAutoRows: `60vw`,
+        gridAutoRows: [`50vw`],
       }}
     >
       {projects.nodes.length > 0 ? (
@@ -72,6 +72,4 @@ const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { projects } 
 
 export default Homepage
 
-// export const Head: HeadFC = () => <Seo />
-
-export const Head: HeadFC<JodieHomepageProps> = ({ location }) => <Seo title="Projects" pathname={location.pathname} />
+export const Head: HeadFC<JodieHomepageProps> = ({ location }) => <Seo title="Daniel's Porfolio" pathname={location.pathname} />

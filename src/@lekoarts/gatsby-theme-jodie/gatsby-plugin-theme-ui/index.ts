@@ -6,8 +6,8 @@ const theme = merge(originalTheme, {
     body: `"Work Sans", -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`
   },
   colors: {
-    text: '#fff',
-    background: '#11091C',
+    text: '#00000',
+    background: '#ffffff',
     primary: '#715696',
   },
 })
