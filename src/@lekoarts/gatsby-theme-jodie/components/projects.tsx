@@ -38,8 +38,8 @@ const Projects: React.FC<PageProps<JodieProjectsProps>> = ({ data: { projects } 
       {projects.nodes.length > 0 ? (
         projects.nodes.map((project) => (
           <GridItem to={project.slug} key={project.slug} data-testid={project.shortTitle}>
+          <span>{project.shortTitle}</span>
             <GatsbyImage image={project.cover.childImageSharp.gatsbyImageData} alt="" />
-            <span>{project.shortTitle}</span>
           </GridItem>
         ))
       ) : (
