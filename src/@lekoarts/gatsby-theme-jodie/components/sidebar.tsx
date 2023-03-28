@@ -33,14 +33,10 @@ const Sidebar = ({ bg }: SidebarProps) => {
       }}
       data-testid="sidebar"
     >
-      {/* <Link to={basePath} aria-label={`${siteTitle}, Back to Home`} sx={{ width: [`3rem`, `4rem`, `4.5rem`, `5rem`] }}> */}
         <Logo />
-      {/* </Link> */}
-      {/* <div sx={{ py: 0, display: [`none`, `none`, `none`, `block`] }} /> */}
-      {/* <br></br> */}
-      <div sx={{ py: 3, display: [`block`, `block`, `block`, `block`] }} />
-      <i> I am a Software Engineer with close to 5 years of building software. I built this website using React and hosting it on AWS. </i> <br></br>
-      <div sx={{ py: 3, display: [`none`, `none`, `none`, `block`] }} />
+      <div sx={{ py: 0, display: [`block`, `block`, `block`, `block`] }} />
+      <p> <small><em>I am a Software Engineer with close to 5 years of building software. I built this website using Gatsby and hosting it on AWS.</em></small></p>
+      <div sx={{ py: 2, display: [`none`, `none`, `none`, `block`] }} />
       <Navigation bg={bg} />
     </header>
   )
