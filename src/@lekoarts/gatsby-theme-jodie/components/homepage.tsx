@@ -52,7 +52,7 @@ const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { projects } 
       sx={{
         display: `grid`,
         gridTemplateColumns: [`1fr`],
-        gridAutoRows: [`50vw`],
+        gridAutoRows: [`50vw`, `50vw`, `50vw`, `50vw`],
       }}
     >
       {projects.nodes.length > 0 ? (

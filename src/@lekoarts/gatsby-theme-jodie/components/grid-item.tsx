@@ -51,6 +51,7 @@ const GridItem: React.FC<React.PropsWithChildren<{ to: string; className?: strin
         position: `absolute`,
         left: 0,
         right: 0,
+        top: 0,
         textAlign: `right`,
         fontWeight: `bold`,
         fontSize: [2, 2, 3, 4],
@@ -72,7 +73,7 @@ const GridItem: React.FC<React.PropsWithChildren<{ to: string; className?: strin
       "@media screen and (prefers-reduced-motion: reduce)": {
         "&:hover": {
           "> div img": {
-            transform: `scale(1)`,
+            transform: `scale(1)`
           },
           "> div:after": {
             boxShadow: (t) => `inset 0 0 0 7px ${get(t, `colors.white`)}`,

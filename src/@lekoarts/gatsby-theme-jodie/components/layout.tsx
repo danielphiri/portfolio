@@ -12,9 +12,23 @@ type LayoutProps = { children: React.ReactNode; color?: string }
 const Layout = ({ children, color = `#ffffff` }: LayoutProps) => (
   <React.Fragment>
     <Global
-      styles={(t) => ({
+      styles={(t) => (
+        {
         "*,*:after,*:before": {
           boxSizing: `border-box`,
+        },
+        "img.gatsby-image-wrapper > img[src*=base64\\,]": {
+          opacity: 0,
+          transition: `opacity 300ms`,
+        },
+        "img.gatsby-image-wrapper > img:not([src*=base64\\,])": {
+          transition: `opacity 300ms`,
+        },
+        "img.gatsby-image-wrapper.fade-in > img[src*=base64\\,]": {
+          opacity: 1,
+        },
+        "img.gatsby-image-wrapper.fade-in > img:not([src*=base64\\,])": {
+          opacity: 0,
         },
         html: {
           fontSize: `18px`,
