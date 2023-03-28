@@ -51,7 +51,7 @@ const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { projects } 
     <div
       sx={{
         display: `grid`,
-        gridTemplateColumns: [`fr`],
+        gridTemplateColumns: [`1fr`],
         gridAutoRows: `60vw`,
       }}
     >
