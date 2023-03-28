@@ -34,7 +34,7 @@ const Projects: React.FC<PageProps<JodieProjectsProps>> = ({ data: { projects } 
       sx={{
         display: `grid`,
         gridTemplateColumns: [`fr`],
-        gridAutoRows: [`50vw`, `50vw`, `50vw`, `50vw`],
+        gridAutoRows: [`90vw`, `80vw`,`70vw`, `50vw`, `50vw`, `50vw`, `50vw`, `50vw`],
       }}
     >
       {projects.nodes.length > 0 ? (
