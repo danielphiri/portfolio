@@ -27,21 +27,6 @@ export type JodieHomepageProps = {
 }
 
 const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { projects } }) => {
-  // const rawItems = [...projects.nodes]
-  // const items = modifyGrid(rawItems)
-  // const itemsCount = items.length
-  // let divisor = 4
-
-  // for (let i = 0; i < itemsCount; i++) {
-  //   const quotient = itemsCount % divisor
-  //   const quotientAlt = (itemsCount - 1) % divisor
-
-  //   if (quotient === 0 || quotientAlt === 0) {
-  //     break
-  //   }
-
-  //   divisor -= 1
-  // }
 
   return (
     <Layout>

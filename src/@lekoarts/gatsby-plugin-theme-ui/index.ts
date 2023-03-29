@@ -47,12 +47,6 @@ const theme = merge(tailwind, {
     project: {
       ...contentStyles,
     },
-    imageList: {
-      ...contentStyles,
-      ".gatsby-image-wrapper:not(:last-child)": {
-        marginBottom: 5,
-      },
-    },
   },
   text: {
     heading: {

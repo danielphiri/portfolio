@@ -56,9 +56,9 @@ const config: GatsbyConfig = {
       // See the theme's README for all available options
       options: {
         navigation: [
-          { name: `Projects`, slug: `/projects` },
-          { name: `Education`, slug: `/education` },
+          // { name: `Projects`, slug: `/projects` },
           { name: `Career`, slug: `/career`, color: `#ffffff` },
+          { name: `Education`, slug: `/education` },
           // { name: `Story`, slug: `/story` },
         ],
       },
@@ -66,7 +66,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/`,
+        output: `/career`,
       },
     },
     {
@@ -75,7 +75,7 @@ const config: GatsbyConfig = {
         name: title,
         short_name: headline,
         description: description,
-        start_url: `/`,
+        start_url: `/career`,
         background_color: `#000000`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
