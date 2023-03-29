@@ -10,6 +10,8 @@ import locales from "@lekoarts/gatsby-theme-jodie/src/locales"
 import { visuallyHidden } from "@lekoarts/gatsby-theme-jodie/src/styles/utils"
 import modifyGrid from "../utils/modify-grid"
 import Seo from "@lekoarts/gatsby-theme-jodie/src/components/seo"
+import CareerPage from ".//../../../../content/pages/career/index.mdx"
+
 
 export type JodieHomepageProps = {
   projects: {
@@ -33,23 +35,8 @@ const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { projects } 
     <h1 sx={visuallyHidden} data-testid="page-title">
       {locales.projects}
     </h1>
-    <div
-      sx={{
-        display: `grid`,
-        gridTemplateColumns: [`1fr`],
-        gridAutoRows: [`90vw`, `80vw`,`70vw`, `50vw`, `50vw`, `50vw`, `50vw`, `50vw`],
-      }}
-    >
-      {projects.nodes.length > 0 ? (
-        projects.nodes.map((project) => (
-          <GridItem to={project.slug} key={project.slug} data-testid={project.shortTitle}>
-          <span>{project.title}</span>
-            <GatsbyImage image={project.cover.childImageSharp.gatsbyImageData} alt="" />
-          </GridItem>
-        ))
-      ) : (
-        <div sx={{ padding: 3 }}>No projects found at the location defined for "projectsPath"</div>
-      )}
+    <div>
+    <CareerPage />
     </div>
   </Layout>
   )

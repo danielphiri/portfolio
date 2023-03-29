@@ -2,7 +2,7 @@ exports.onCreatePage = ({ page, actions }) => {
     const { createPage, deletePage } = actions
   
     // Delete the existing home page
-    if (page.path === '' || page.path === '/') {
+    if (page.isHomePage && page.path !== '/career') {
       deletePage(page)
     }
   
