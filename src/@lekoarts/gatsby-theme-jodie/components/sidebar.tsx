@@ -22,9 +22,9 @@ const Sidebar = ({ bg }: SidebarProps) => {
         position: [`relative`, `relative`, `relative`, `relative`],
         height: `100%`,
         display: `flex`,
-        flexDirection: [`column`, `column`, `column`, `column`],
-        alignItems: [`flex-start`, `flex-start`, `flex-start`, `flex-start`],
-        justifyContent: [`flex-start`, `flex-start`, `flex-start`, `flex-start`],
+        flexDirection: [`row`, `row`, `row`, `column`],
+        alignItems: [`start`, `start`, `start`, `flex-start`],
+        justifyContent: [`start`, `start`, `start`, `flex-start`],
         svg: {
           fill: readableColor(bg),
         },
@@ -34,9 +34,10 @@ const Sidebar = ({ bg }: SidebarProps) => {
       data-testid="sidebar"
     >
         <Logo />
+        &nbsp;&nbsp;&nbsp;
       <div sx={{ py: 0, display: [`block`, `block`, `block`, `block`] }} />
-      <p> <small><em>I am a Software Engineer with close to 5 years of building software. I built this website using Gatsby and hosting it on AWS.</em></small></p>
-      <div sx={{ py: 2, display: [`none`, `none`, `none`, `block`] }} />
+      <p> <small><em>"I am a Software Engineer with close to 5 years of building software. I built this website using Gatsby and hosting it on AWS."</em></small></p>
+      <div sx={{ py: 2, display: [`block`, `block`, `block`, `block`] }} />
       <Navigation bg={bg} />
     </header>
   )
