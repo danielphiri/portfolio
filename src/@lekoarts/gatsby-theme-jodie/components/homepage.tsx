@@ -44,4 +44,4 @@ const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { projects } 
 
 export default Homepage
 
-export const Head: HeadFC<JodieHomepageProps> = ({ location }) => <Seo title="Daniel's Porfolio" pathname={location.pathname} />
+export const Head: HeadFC<JodieHomepageProps> = ({ location }) => <Seo title="Daniel's Portfolio. Software Engineer in the Los Angeles Area." pathname={location.pathname} />
