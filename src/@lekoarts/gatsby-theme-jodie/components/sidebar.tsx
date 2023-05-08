@@ -36,7 +36,7 @@ const Sidebar = ({ bg }: SidebarProps) => {
         <Logo />
         &nbsp;&nbsp;&nbsp;
       <div sx={{ py: 0, display: [`block`, `block`, `block`, `block`] }} />
-      <p> <small><em>"I am a Software Engineer with close to 5 years of building software. I built this website using Gatsby and hosting it on AWS."</em></small></p>
+      <p> <small><em>I am a Software Engineer with close to 3 years in the industry and close to 5 years of building iOS applications in general.</em></small></p>
       <div sx={{ py: 2, display: [`block`, `block`, `block`, `block`] }} />
       <Navigation bg={bg} />
     </header>
