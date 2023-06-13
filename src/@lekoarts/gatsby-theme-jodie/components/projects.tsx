@@ -43,9 +43,7 @@ const Projects: React.FC<PageProps<JodieProjectsProps>> = ({ data: { projects } 
             <span>{project.shortTitle}</span>
             <GatsbyImage
               image={project.cover.childImageSharp.gatsbyImageData}
-              alt=""
-              layout="fixed"
-              placeholder="blurred"
+              alt=''
             />
           </GridItem>
         ))
